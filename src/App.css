@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #212139;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app-name {
+  font-size: 40px;
+}
+
+.main-row {
+  font-size: 25px;
+}
+
+.count-button {
+  font-size: 15px;
+  background-color: #684bff;
+  border: none;
+}
+
+.check {
+  width: 60%;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #684bff;
+  border: none;
+}
+
+.lock {
+  width: 60%;
+}
+
+.password {
+  width: 80%;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-name {
+    font-size: 30px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .main-row {
+    font-size: 20px;
   }
 }
